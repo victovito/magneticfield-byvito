@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+#canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+#canvaswebgl {
+    position: absolute;
+    z-index: 0;
+}
+
+#buttontableright {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: 3;
+}
+
+#buttontableleft {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: 4;
+}
+
+#chargepropertiestable {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    z-index: 2;
+}
+
+#upperlefttable {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 5;
+}

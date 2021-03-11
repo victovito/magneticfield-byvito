@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <title>Campo Magnético</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <canvas id="canvaswebgl"></canvas>
+    <table id="buttontableleft">
+        <tr>
+            <td><button onclick="Program.ClearAllParticles()" id="clearallparticles">Limpar todas as particulas</button></td>
+        </tr>
+        <tr>
+            <td><p style="font-family: Arial, Helvetica, sans-serif; color: white">Habilitar emissão de partículas</p></td>
+            <td>
+                <input type="checkbox" id="emitparticlescheck" onchange="Program.UpdateEmitParticles()">
+            </td>
+        </tr>
+        <tr>
+            <td><p style="font-family: Arial, Helvetica, sans-serif; color: white">Visualização do campo (webgl)</p></td>
+            <td>
+                <input type="checkbox" id="fieldvisualizationcheck" onchange="Program.UpdateFieldVisualization()">
+            </td>
+        </tr>
+    </table>
+    <table id="buttontableright">
+        <tr>
+            <td width=180px></td>
+            <td width=180px></td>
+            <td width=180px><button style="width: 180px" id="delete" onclick="Program.PAGE_DeleteSelected()">Deletar selecionado</button></td>
+            <td width=180px><button style="width: 180px" id="deleteall" onclick="Program.PAGE_DeleteAll()">Deletar todos</button></td>
+        </tr>
+        <tr>
+            <td><button style="width: 180px" id="addlineorigin" onclick="Program.PAGE_AddLine()">Adicionar origem de linha</button></td>
+            <td><button style="width: 180px" id="addpositivecharge" onclick="Program.PAGE_AddPCharge()">Adicionar carga positiva</button></td>
+            <td><button style="width: 180px" id="addnegativecharge" onclick="Program.PAGE_AddNCharge()">Adicionar carga negativa</button></td>
+            <td><button style="width: 180px" id="addsensor" onclick="Program.PAGE_AddSensor()">Adicionar sensor</button></td>
+        </tr>
+    </table>
+    <table id="chargepropertiestable">
+        <tr>
+            <td align="right"><p style="font-family: Arial, Helvetica, sans-serif; color: white">Força da carga</p></td>
+            <td>
+                <input id="chargeforce" type="number" style="width: 100px" value=0>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><p style="font-family: Arial, Helvetica, sans-serif; color: white">Tipo de carga</p></td>
+            <td>
+                <select id="chargetype">
+                    <option value="positive">Positiva</option>
+                    <option value="negative">Negativa</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><p id="chargeemitparticles_text" style="font-family: Arial, Helvetica, sans-serif; color: white">Emitir Partículas</p></td>
+            <td>
+                <input type="checkbox" id="chargeemitparticles">
+            </td>
+        </tr>
+    </table>
+    <table id="upperlefttable">
+        <tr>
+            <td><p style="font-family: Arial, Helvetica, sans-serif; color: white">Transparência dos vetores</p></td>
+            <td><input type="range" id="screenvectorgrayscale" min="0" max="255"></td>
+        </tr>
+    </table>
+</body>
+</html>
