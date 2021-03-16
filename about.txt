@@ -1,0 +1,22 @@
+<hr>
+<p style="text-align: center; margin-top: 0px; margin-bottom: 0px"> Campo Magnético </p>
+
+    Este programa simula as distorções no campo magnético de acordo com fórmulas físicas e soma de vetores. Há 5 tipos de ferramentas que ajudam a visualizá-lo: os sensores de tela, o sensores, as linhas, as partículas e a visualização de campo.
+    Os sensores de tela mostram a direção que aquele ponto do campo magnético aponta, porém não mostra sua força.
+    Os sensores são capazes de mostrar a direção do campo e a força.
+    As linhas dão uma ideia mais precisa sobre o fluxo do campo, mas não são capazes de mostrar a força.
+    As partículas também mostram precisamente o fluxo do campo, mas também não são capazes de mostrar a força.
+    A visualização de campo mostra a direção (cada cor representa uma direção única) e a força (quanto mais escura a cor, mais fraca a força naquele ponto).
+
+<hr>
+Controles:
+
+    Botão esquerdo: Seleciona um objeto.
+    Delete: Remove um objeto.
+    Ctrl + botão esquerdo: Adiciona uma carga positiva.
+    Ctrl + botão direito: Adiciona uma carga negativa.
+    Ctrl + botão central: Adiciona um sensor.
+    Shift + botão esquerdo: Adiciona uma origem de linha.
+
+<hr>
+<p style="text-align: right; margin-bottom: 0px;">by Vito</p>

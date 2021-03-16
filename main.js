@@ -5,6 +5,8 @@ function Run(){
     var canvas = InitCanvas();
     var ctx = canvas.getContext("2d");
 
+    About.setAbout("right");
+
     WebGLCanvas.loadShaders();
 
     Program.GetChargePropertiesTable().style.display = "none";
